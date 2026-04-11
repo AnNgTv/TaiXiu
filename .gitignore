@@ -1,0 +1,30 @@
+# Java/Maven/Gradle Plugin Development
+
+# Compiled class files
+*.class
+
+# Log files
+*.log
+
+# Maven
+/target/
+/.mvn/
+/.idea
+/.project
+/.classpath
+/.settings/
+
+# Gradle
+.gradle/
+build/
+bin/
+
+# IDE specific files
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Other
+.DS_Store
+Thumbs.db
