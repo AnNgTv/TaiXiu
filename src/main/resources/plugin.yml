@@ -1,0 +1,20 @@
+name: TaiXiu
+version: 1.0.0
+main: com.anngtv.taixiu.TaiXiu
+description: Mini-game Tai Xiu (Sic Bo) for Minecraft
+author: AnNgTv
+depend: [Vault]
+
+commands:
+  taixiu:
+    description: Main command for Tai Xiu
+    usage: /taixiu <bet|status|history|reload>
+    aliases: [tx]
+
+permissions:
+  taixiu.use:
+    description: Allow players to play Tai Xiu
+    default: true
+  taixiu.admin:
+    description: Admin permissions for Tai Xiu
+    default: op

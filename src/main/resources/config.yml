@@ -1,0 +1,31 @@
+# TaiXiu Configuration
+
+game:
+  # Time between rounds in seconds
+  duration: 60
+  # Interval between broadcasts in seconds
+  broadcast-interval: 20
+  # Minimum bet amount
+  min-bet: 100
+  # Maximum bet amount
+  max-bet: 1000000
+  # Win multiplier (e.g., 1.95 means player gets 1.95x their bet back)
+  multiplier: 1.95
+
+messages:
+  prefix: "&6&l[TaiXiu] &r"
+  new-round: "&eMột phiên mới đã bắt đầu! Sử dụng &a/tx bet <tai|xiu> <số tiền> &eđể đặt cược."
+  time-left: "&eThời gian còn lại: &f{time} giây."
+  round-ended: "&ePhiên kết thúc! Kết quả là: &l{result} &r&e({d1}, {d2}, {d3} - Tổng: {total})"
+  win: "&aChúc mừng! Bạn đã thắng &f{amount} &atừ ván cược {type}."
+  lose: "&cRất tiếc! Bạn đã thua ván cược {type}."
+  bet-success: "&aBạn đã đặt cược &f{amount} &avào &l{type}&a."
+  not-enough-money: "&cBạn không có đủ tiền để đặt cược!"
+  invalid-amount: "&cSố tiền cược không hợp lệ!"
+  invalid-type: "&cSử dụng: /tx bet <tai|xiu> <số tiền>"
+  already-bet: "&cBạn đã đặt cược trong phiên này rồi!"
+  no-round: "&cHiện tại không có phiên nào đang diễn ra!"
+
+database:
+  type: sqlite
+  file: "data.db"
